@@ -3,13 +3,13 @@
 const watches = [
   {
     name: "Obsidian",
-    image: "src/assets/images/black watch.webp",
+    image: "../src/assets/images/black watch.webp",
     alt: "Black Watch",
     description: "Bold, minimalist black timepiece with Swiss movement.",
   },
   {
     name: "Marble",
-    image: "src/assets/images/white watch.webp",
+    image: "../src/assets/images/white watch.webp",
     alt: "White Watch",
     description: "Elegant, clean white watch for timeless sophistication.",
   },
@@ -48,8 +48,8 @@ function updateLogoForTheme() {
   const logoImg = document.getElementById("logo-img");
   const ogMeta = document.getElementById("og-image-meta");
   const twitterMeta = document.getElementById("twitter-image-meta");
-  const darkLogo = "src/assets/images/Dark Chronos Logo.webp";
-  const lightLogo = "src/assets/images/Light Chronos Logo.webp";
+  const darkLogo = "../src/assets/images/Dark Chronos Logo.webp";
+  const lightLogo = "../src/assets/images/Light Chronos Logo.webp";
   const logoToUse = isDark ? lightLogo : darkLogo;
   if (logoImg) logoImg.src = logoToUse;
   if (ogMeta) ogMeta.setAttribute("content", logoToUse);
